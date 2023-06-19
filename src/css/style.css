@@ -137,7 +137,7 @@ body {
 }
 
 .container-daniela {
-    display: ;
+    display: none;
 }
 
 .container-daniela-titulo {
@@ -167,6 +167,57 @@ body {
 }
 
 .foto:target .container-daniela-imagem {
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    top: 15px;
+    background-color: var(--cor-de-fundo);
+    left: 25%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px var(--cor-da-fonte); 
+}
+
+.foto:target .fechar{
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 26%;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--cor-da-fonte); 
+}
+.container-davi {
+    /* display: none; */
+}
+
+.container-davi-titulo {
+    margin: 20px 0 60px 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container-davi-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    justify-content: center;
+}
+
+.container-davi-imagem {
+    border: 3px solid var(--cor-das-bordas);
+    border-radius: 1px;
+    box-shadow: 3px 3px var(--cor-das-bordas);
+    object-fit: contain;
+    width: var(--width-padrao);
+    height: var(--height-padrao);   
+}
+
+.fechar {
+    display:none;
+}
+
+.foto:target .container-davi-imagem {
     position: fixed;
     width: 50%;
     height: 80%;
