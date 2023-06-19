@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/index.js"></script>
 
     <title>Álbum da Família Esteves</title>
 </head>
@@ -19,13 +20,13 @@
 <body>
     <header class="container-menu">
         <ul class="container-menu-links">
-            <li class="menu-links"><a href="#" class="link-container-guilherme">Guilherme</a></li>
-            <li class="menu-links"><a href="#" class="link-container-daniela">Daniela</a></li>
-            <li class="menu-links"><a href="#" class="link-container-davi">Davi</a></li>
+            <li class="menu-links"><a href="#" onclick="mostraGuilherme('Guilherme')" class="link-container-guilherme">Guilherme</a></li>
+            <li class="menu-links"><a href="#" onclick="mostraDaniela('Daniela')" class="link-container-daniela">Daniela</a></li>
+            <li class="menu-links"><a href="#" onclick="mostraDavi('Davi')" class="link-container-davi">Davi</a></li>
         </ul>
     </header>
     <main>
-        <section class="container-principal">
+        <section class="container-principal" id="Home">
             <h1 class="container-principal-titulo">Bem vindo ao nosso álbum de recordações online.</h1>
             <p class="container-principal-texto">Queremos deixar nossos momentos felizes guardados não somente em nossas
                 memórias, mas também em algum
@@ -33,10 +34,10 @@
             <img class="container-principal-imagem" src="./src/imagens/IMG-20201221-WA0012.jpg" width="400px"
                 height="400px" alt="família reunida">
         </section>
-        <section class="container-guilherme">
+        <section class="container-guilherme" id="Guilherme">
             <ul class="container-guilherme-conteudo">
                 <li>
-                    <h1 class="container-guilherme-titulo">Olá, seja bem vindo às memórias do Guilherme!</h1>
+                    <h1 class="container-guilherme-titulo">Olá, seja bem vindo às memórias do Guilherme !</h1>
                 </li>
                 <ul class="container-guilherme-galeria">
                     <li class="foto" id="foto1">
@@ -120,10 +121,10 @@
             </ul>
         </section>
 
-        <section class="container-daniela">
+        <section class="container-daniela" id="Daniela">
             <ul class="container-daniela-conteudo">
                 <li>
-                    <h1 class="container-daniela-titulo">Olá, seja bem vindo às memórias da Daniela!</h1>
+                    <h1 class="container-daniela-titulo">Olá, seja bem vindo às memórias da Daniela !</h1>
                 </li>
                 <ul class="container-daniela-galeria">
                     <li class="foto" id="foto1dani">
@@ -219,10 +220,10 @@
                 </ul>
             </ul>
         </section>
-        <section class="container-davi">
+        <section class="container-davi" id="Davi">
             <ul class="container-davi-conteudo">
                 <li>
-                    <h1 class="container-davi-titulo">Olá, seja bem vindo às memórias do Davi!</h1>
+                    <h1 class="container-davi-titulo">Olá, seja bem vindo às memórias do Davi !</h1>
                 </li>
                 <ul class="container-davi-galeria">
                     <li class="foto" id="foto1davi">

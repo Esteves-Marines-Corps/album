@@ -65,7 +65,7 @@ body {
     align-items: center;
     margin: 0 30px;
     text-align: center;
-    display: none;
+    display: block;
 }
 
 .container-principal-titulo {
@@ -188,7 +188,7 @@ body {
     color: var(--cor-da-fonte); 
 }
 .container-davi {
-    /* display: none; */
+    display: none;
 }
 
 .container-davi-titulo {
